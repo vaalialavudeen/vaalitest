@@ -1,0 +1,9 @@
+##the docker file for creating the docker container has been done. 
+## the server.js file created for the node project and npn packages installed on that program 
+## jenkins file has been creted for creating the docker hub image from the git hub repository 
+
+## jenkins pipeline specification
+## add the docker hub creadential to the jenkins 
+the URL for store the credentials in jenkins 
+http://192.168.6.236:8080/credentials/store/system/domain/_/credential/docker-hub-credentials/
+
