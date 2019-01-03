@@ -22,7 +22,7 @@ stage('Test image'){
 
     }
 }
-stage('oush image'){
+stage('push image'){
     /* finally, we'll push the image with two tags:
     * First, the incremental build from jenkins
     * seconf, the 'latest'tag. 
