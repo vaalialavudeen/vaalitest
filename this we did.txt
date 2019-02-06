@@ -7,3 +7,7 @@
 the URL for store the credentials in jenkins 
 http://192.168.6.236:8080/credentials/store/system/domain/_/credential/docker-hub-credentials/
 
+steps for creating node js project using jenkins . 
+
+this is the template for node project . 
+
