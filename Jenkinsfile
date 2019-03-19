@@ -22,14 +22,14 @@ stage('Test image'){
 
     }
 }
-stage('push image'){
-    /* finally, we'll push the image with two tags:
-    * First, the incremental build from jenkins
-    * seconf, the 'latest'tag. 
-    * pushing multiple tag is cheap, as all the layers are reused. */
-    docker.withRegistry('https://registry.hub.docker.com','docker-hub-credentials'){
-        app.push("${env.BUILD_NUMBER}")
-        app.push("latest")
-}
-}
-}
+// stage('push image'){
+//     /* finally, we'll push the image with two tags:
+//     * First, the incremental build from jenkins
+//     * seconf, the 'latest'tag. 
+//     * pushing multiple tag is cheap, as all the layers are reused. */
+//     docker.withRegistry('https://registry.hub.docker.com','docker-hub-credentials'){
+//         app.push("${env.BUILD_NUMBER}")
+//         app.push("latest")
+// }
+// }
+// }
