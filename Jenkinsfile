@@ -7,19 +7,20 @@ stage('clone repository') {
     checkout scm
 }
 
-// stage(Build image){
-//     /*this builds the actual imahe; synonymous to
-//     * dicker build on the command line */
-
-//     app=docker.build("cicd/testbuild")
-// }
 stage(Build image){
     /*this builds the actual imahe; synonymous to
     * dicker build on the command line */
 
-    // app=docker.build("cicd/testbuild")
-    sh docker build .
+    app=docker.build("cicd/testbuild")
 }
+
+
+// stage(Build image){
+//     /*this builds the actual imahe; synonymous to
+//     * dicker build on the command line */
+//     // app=docker.build("cicd/testbuild")
+//     sh docker build .
+// }
 stage('Test image'){
     /* ideally, we would run a test framework againts our image.
     * For this example, we are uisng volkwagen-type approach */
