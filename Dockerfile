@@ -1,5 +1,5 @@
 #use a node base image
-FROM node:7
+FROM node:boron-alpine
 
 #maintainer details 
 LABEL maintainer "lakshmanan17792@gmail.com"
