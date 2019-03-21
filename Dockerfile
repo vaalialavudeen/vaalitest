@@ -5,10 +5,6 @@ FROM node:boron-alpine
 LABEL maintainer "lakshmanan17792@gmail.com"
 
 #set healthcheckuup
-#update command
-
-RUN apt-get upgrade -y
-
 
 HEALTHCHECK --interval=5s \
             --timeout=5s \
