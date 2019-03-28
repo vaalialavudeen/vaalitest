@@ -6,14 +6,12 @@ pipeline {
         
         }
         stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
+           
+                echo 'Testing..
         }
         stage('Deploy') {
-            steps {
+   
                 npm install
                 node server.js
-            }
         }
 }
